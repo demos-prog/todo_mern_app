@@ -1,0 +1,53 @@
+.wrap {
+  width: 100vw;
+  height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+span {
+  font-size: 25px;
+}
+
+p {
+  font-size: 20px;
+}
+
+#regForm {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+
+#submit,
+.inp {
+  border-radius: 5px;
+}
+
+.inp {
+  padding: 10px;
+  border: 1px solid #766cff;
+  font-size: 30px;
+}
+
+.inp:focus {
+  border: 2px solid blue;
+  padding: 9px;
+}
+
+#submit {
+  background-color: green;
+  color: white;
+  cursor: pointer;
+  padding: 10px;
+  font-size: 20px;
+  transition: .2s;
+}
+
+#submit:hover {
+  background-color: rgb(0, 160, 0);
+}

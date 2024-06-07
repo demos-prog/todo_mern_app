@@ -1,0 +1,7 @@
+.errMessage {
+  display: flex;
+  padding: 10px;
+  background-color: #FF0000;
+  color: #FFFFFF;
+  border-radius: 5px;
+}

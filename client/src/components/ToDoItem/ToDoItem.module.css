@@ -1,0 +1,121 @@
+.itemWrap {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  gap: 20px;
+  border-radius: 6px;
+}
+
+.itemWrap:hover {
+  padding: 9px;
+  border: 1px solid #000;
+}
+
+.delImg,
+.completeImg {
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  transition: .5s;
+}
+
+.notification {
+  z-index: 10;
+  position: absolute;
+  color: white;
+  background-color: black;
+  width: min-content;
+  padding: 5px;
+  text-align: center;
+  border-radius: 4px;
+  font-size: 15px;
+  transition: .2s;
+}
+
+.delImg:hover {
+  transform: rotate(90deg) scale(1.1);
+}
+
+.completeImg:hover {
+  transform: scale(1.2);
+}
+
+.completedCheck {
+  border-radius: 50%;
+  background-color: lightgreen;
+}
+
+.bgComplete {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+}
+
+.actions {
+  user-select: none;
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.dotActions {
+  position: relative;
+}
+
+.dotsList {
+  position: absolute;
+  z-index: 10;
+  background-color: white;
+  left: -80px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.dotsImg {
+  transform: rotate(90deg);
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+}
+
+.completed {
+  text-decoration: line-through;
+}
+
+.changeForm {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+#editInput {
+  width: 70%;
+  border-radius: 3px;
+  padding: 4px;
+  font-size: 18px;
+}
+
+#submBtn {
+  cursor: pointer;
+  border-radius: 3px;
+  padding: 7px 30px;
+  transition: .2s;
+  color: white;
+  background-color: lightcoral;
+}
+
+#submBtn:hover {
+  color: #000;
+}
+
+.text {
+  max-width: 800px;
+  text-wrap: wrap;
+  overflow: hidden;
+}
