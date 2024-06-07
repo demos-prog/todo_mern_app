@@ -37,7 +37,7 @@ const Auth: React.FC = () => {
       return
     }
 
-    const res = await fetch(`http://localhost:5050/todo/auth/${userName}/${userPassword}`)
+    const res = await fetch(`https://todo-mern-app-ta4e.onrender.com/todo/auth/${userName}/${userPassword}`)
 
     if (res.ok) {
       navigate(`/todo/${userName}`);

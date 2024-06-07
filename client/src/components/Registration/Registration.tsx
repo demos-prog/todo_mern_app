@@ -38,7 +38,7 @@ const Registration: React.FC = () => {
       password: userPassword,
     }
 
-    const res = await fetch(`http://localhost:5050/todo/createuser`, {
+    const res = await fetch(`https://todo-mern-app-ta4e.onrender.com/todo/createuser`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json;charset=utf-8'
