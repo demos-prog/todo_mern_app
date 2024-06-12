@@ -42,8 +42,7 @@ const Auth: React.FC = () => {
     if (res.ok) {
       navigate(`/todo/${userName}`);
     } else {
-      const errorMessage = await res.json();
-      setErrorText(errorMessage.message);
+      setErrorText('Login error');
     }
   }
 

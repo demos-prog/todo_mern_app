@@ -55,8 +55,7 @@ const Registration: React.FC = () => {
       ));
       navigate(`/todo/${userName}`);
     } else {
-      const errorMessage = await res.json();
-      setErrorText(errorMessage.message);
+      setErrorText('Registration error');
     }
   }
 
